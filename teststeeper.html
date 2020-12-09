@@ -1,0 +1,663 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+<style type="text/css" media="all">
+#grad1 {
+    background-color: : #9C27B0;
+    background-image: linear-gradient(120deg, #FF4081, #81D4FA)
+}
+
+#msform {
+    text-align: center;
+    position: relative;
+    margin-top: 20px
+}
+
+#msform fieldset .form-card {
+    background: white;
+    border: 0 none;
+    border-radius: 0px;
+    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
+    padding: 20px 40px 30px 40px;
+    box-sizing: border-box;
+    width: 98%;
+    margin: 0 1% 20px 1%;
+    position: relative
+}
+#msform fieldset .form-card1 {
+    background: white;
+    border: 0 none;
+    border-radius: 0px;
+    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
+    padding: 1px 2px 2px 1px;
+    box-sizing: border-box;
+    width: 98%;
+    margin: 0 1% 20px 1%;
+    position: relative
+}
+#msform fieldset {
+    background: white;
+    border: 0 none;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 20px;
+    position: relative
+}
+
+#msform fieldset:not(:first-of-type) {
+    display: none
+}
+
+#msform fieldset .form-card {
+    text-align: left;
+    color: #9E9E9E
+}
+
+#msform input,
+#msform textarea {
+    padding: 0px 8px 4px 8px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0px;
+    margin-bottom: 25px;
+    margin-top: 2px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: montserrat;
+    color: #2C3E50;
+    font-size: 16px;
+    letter-spacing: 1px
+}
+
+#msform input:focus,
+#msform textarea:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: none;
+    font-weight: bold;
+    border-bottom: 2px solid skyblue;
+    outline-width: 0
+}
+
+#msform .action-button {
+    width: 100px;
+    background: #2baade;
+    font-weight: normal;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px;
+    border-radius: 5px;
+    font-family: roboto;
+}
+
+#msform .action-button:hover,
+#msform .action-button:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px skyblue
+}
+
+#msform .action-button-previous {
+    width: 100px;
+    background: #fff;
+    font-weight: bold;
+    color: #2baade;
+    border: 1px solid #2baade;
+    border-radius: 0px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px;
+    border-radius: 5px;
+    font-family: roboto;
+}
+
+#msform .action-button-previous:hover,
+#msform .action-button-previous:focus {
+     border: 1px solid #2baade;
+}
+
+select.list-dt {
+    border: none;
+    outline: 0;
+    border-bottom: 1px solid #ccc;
+    padding: 2px 5px 3px 5px;
+    margin: 2px
+}
+
+select.list-dt:focus {
+    border-bottom: 2px solid skyblue
+}
+
+.card {
+    z-index: 0;
+    border: none;
+    border-radius: 0.5rem;
+    position: relative
+}
+
+.fs-title {
+    font-size: 14px;
+    color: #0fc3f9;
+    margin-bottom: 10px;
+    font-weight: 600;
+    text-align: left;
+    background: #fff;
+    line-height: 31px;
+    text-indent: 10px;
+    border-bottom: 1px solid #4ad2e8;
+}
+
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    color: lightgrey
+}
+
+#progressbar .active {
+    color: #000000
+}
+
+#progressbar li {
+    list-style-type: none;
+    font-size: 16px;
+    width: 25%;
+    float: left;
+    position: relative
+}
+
+#progressbar #account:before {
+    font-family: FontAwesome;
+    content: "\f187"
+}
+
+#progressbar #personal:before {
+    font-family: FontAwesome;
+    content: "\f058"
+}
+
+#progressbar #payment:before {
+    font-family: FontAwesome;
+    content: "\f013"
+}
+
+#progressbar #confirm:before {
+    font-family: FontAwesome;
+    content: "\f00c"
+}
+
+#progressbar li:before {
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    display: block;
+    font-size: 18px;
+    color: #ffffff;
+    background:#3eaade;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    padding: 2px
+}
+
+
+ul {
+list-style-type: none;
+}
+
+a {
+color: #e95846;
+text-decoration: none;
+}
+
+.pricing-table-title {
+text-transform: uppercase;
+font-weight: 700;
+font-size: 2.6em;
+color: #FFF;
+margin-top: 15px;
+text-align: left;
+margin-bottom: 25px;
+text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+}
+
+.pricing-table-title a {
+font-size: 0.6em;
+}
+
+.clearfix:after {
+content: '';
+display: block;
+height: 0;
+width: 0;
+clear: both;
+}
+/** ========================
+ * Contenedor
+ ============================*/
+.pricing-wrapper {
+width: 960px;
+margin: 40px auto 0;
+}
+
+.pricing-table {
+margin: 0 10px;
+text-align: center;
+width: 300px;
+float: left;
+-webkit-box-shadow: 0 0 15px rgba(0,0,0,0.4);
+box-shadow: 0 0 15px rgba(0,0,0,0.4);
+-webkit-transition: all 0.25s ease;
+-o-transition: all 0.25s ease;
+transition: all 0.25s ease;
+}
+
+<!-- .pricing-table:hover { -->
+<!-- -webkit-transform: scale(1.06); -->
+<!-- -ms-transform: scale(1.06); -->
+<!-- -o-transform: scale(1.06); -->
+<!-- transform: scale(1.06); -->
+<!-- } -->
+
+.pricing-title {
+color: #FFF;
+background: #e95846;
+padding:8px 0;
+font-size: 1.2em;
+text-transform: uppercase;
+text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+}
+
+.pricing-table.recommended .pricing-title {
+background: #2db3cb;
+}
+
+.pricing-table.recommended .pricing-action {
+background: #2db3cb;
+}
+
+.pricing-table .price {
+	background: #403e3d;
+    font-size: 2.4em;
+    font-weight: 700;
+    padding: 8px 0;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+    color: #fff;
+}
+
+.pricing-table .price sup {
+font-size: 0.4em;
+position: relative;
+left: 5px;
+}
+
+.table-list {
+background: #FFF;
+color: #403d3a;
+}
+
+.table-list li 
+{
+	font-size: 0.9em;
+    font-weight:400;
+    padding: 4px 4px;
+    text-align: left;
+}
+.table-list li:marker {
+display:none;
+}
+.table-list li:before {
+content: "\f00c";
+font-family: 'FontAwesome';
+color: #3fab91;
+display: inline-block;
+position: relative;
+right: 5px;
+font-size: 16px;
+} 
+
+.table-list li span {
+font-weight: 400;
+}
+
+.table-list li span.unlimited {
+color: #FFF;
+background: #e95846;
+font-size: 0.9em;
+padding: 5px 7px;
+display: inline-block;
+-webkit-border-radius: 38px;
+-moz-border-radius: 38px;
+border-radius: 38px;
+}
+
+
+.table-list li:nth-child(2n) {
+background: #F0F0F0;
+}
+
+.table-buy {
+background: #FFF;
+padding: 15px;
+text-align: left;
+overflow: hidden;
+}
+
+.table-buy p {
+float: left;
+color: #37353a;
+font-weight: 700;
+font-size: 2.4em;
+}
+
+.table-buy p sup {
+font-size: 0.5em;
+position: relative;
+left: 5px;
+}
+
+.table-buy .pricing-action {
+float: right;
+color: #FFF;
+background: #e95846;
+padding: 10px 16px;
+-webkit-border-radius: 2px;
+-moz-border-radius: 2px;
+border-radius: 2px;
+font-weight: 700;
+font-size: 1.4em;
+text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+-webkit-transition: all 0.25s ease;
+-o-transition: all 0.25s ease;
+transition: all 0.25s ease;
+width:100%;
+text-align:center;
+}
+
+.table-buy .pricing-action:hover {
+background: #cf4f3e;
+}
+
+.recommended .table-buy .pricing-action:hover {
+background: #228799;
+}
+
+/** ================
+ * Responsive
+ ===================*/
+ @media only screen and (min-width: 768px) and (max-width: 959px) {
+ .pricing-wrapper {
+ width: 768px;
+ }
+
+ .pricing-table {
+ width: 236px;
+ }
+
+.table-list li {
+font-size: 1.3em;
+}
+
+ }
+
+ @media only screen and (max-width: 767px) {
+ .pricing-wrapper {
+ width: 420px;
+ }
+
+ .pricing-table {
+ display: block;
+ float: none;
+ margin: 0 0 20px 0;
+ width: 100%;
+ }
+ }
+
+@media only screen and (max-width: 479px) {
+.pricing-wrapper {
+width: 300px;
+}
+} 
+
+.custom-file-input {
+  color: transparent;
+}
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.custom-file-input::before {
+  content: 'Select some files';
+  color: black;
+  display: inline-block;
+  background: -webkit-linear-gradient(top, #000, #000);
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 10pt;
+}
+.custom-file-input:hover::before {
+  border-color: black;
+}
+.custom-file-input:active {
+  outline: 0;
+}
+.custom-file-input:active::before {
+  background: -webkit-linear-gradient(top, #000, #000); 
+}
+.logo{
+    border: 1px solid #bfbaba;
+    width: 80px;
+    height: 80px;
+    display: block;
+    background: #f1ecec;
+	cursor:none;
+}
+
+</style>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	
+</head>
+
+<body>
+<div class="container-fluid" id="grad1">
+    <div class="row justify-content-center mt-0">
+        <div class="col-11 col-sm-9 col-md-7 col-lg-6 text-center p-0 mt-3 mb-2">
+            <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
+                <h2><strong>Sign Up Your User Account</strong></h2>
+                <p>Fill all form field to go to next step</p>
+                <div class="row">
+                    <div class="col-md-12 mx-0">
+                        <form id="msform">
+                            <!-- progressbar -->
+                            <ul id="progressbar">
+                                <li class="active" id="account"><strong>Create Box</strong></li>
+                                <li id="personal"><strong>Select Box</strong></li>
+                                <li id="payment"><strong>Setting</strong></li>
+                                <li id="confirm"><strong>Summery</strong></li>
+                            </ul> <!-- fieldsets -->
+                            <fieldset>
+                                <div class="form-card">
+                                     <h2 class="fs-title">Box Name</h2> <input type="text" name="boxname" placeholder="Box Name" /> 
+									<h2 class="fs-title">Box Description</h2> <textarea row="8" name="boxdesp" placeholder="Box Description"> </textarea>
+                                </div> <input type="button" name="next" class="next action-button" value="Next Step" />
+                            </fieldset>
+                            <fieldset>
+                                <div class="form-card1">
+                             		<div class="pricing-wrapper clearfix">
+								<div class="pricing-table">
+								<h3 class="pricing-title">Ideation Box</h3>
+								<div class="price">Free</div>
+								<ul class="table-list">
+									<li>Suggestions are visible only to you</li>
+									<li>Respond to suggestions</li>
+									<li>Password protect your box</li>
+									<li>Allow anonymous suggestions</li>
+									<li>Create a custom URL and QR code</li>
+									<li>Share your box</li>
+									<li>Email alerts</li>
+								</ul>
+									<div class="table-buy">
+								<a href="#" class="pricing-action">Select Now</a>
+								</div>
+								</div>
+
+								<div class="pricing-table recommended">
+										<h3 class="pricing-title">Traditional Box</h3>
+										<div class="price">$100<sup>/ mo</sup></div>
+										<ul class="table-list">
+										<li>Suggestions are visible only to you</li>
+										<li>Respond to suggestions</li>
+										<li>Password protect your box</li>
+										<li>Allow anonymous suggestions</li>
+										<li>Create a custom URL and QR code</li>
+										<li>Share your box</li>
+										<li>Email alerts</li>
+										</ul>
+										<div class="table-buy">
+										<a href="#" class="pricing-action">Select Now</a>
+										</div>
+								</div>
+								
+						</div>
+                              
+								
+								
+                            
+                                </div> <input type="button" name="previous" class="previous action-button-previous" value="Previous" /> 
+								<input type="button" name="next" class="next action-button" value="Next Step" />
+                            </fieldset>
+                            <fieldset>
+                                <div class="form-card">
+                            <p>
+									<h2 class="fs-title">Box Setting</h2>
+									  <table width="400px" border="0" cellspacing="2" cellpadding="2">
+										<tr>
+										  <td width="278">Password protect your box</td>
+										  <td width="33"><input type="checkbox" name="psd" id="psd" /></td>
+										</tr>
+										<tr>
+										  <td><label for="Access2">Anyone with the URL can access your box</label></td>
+										  <td><input type="checkbox" name="access" id="access" /></td>
+										</tr>
+										<tr>
+										  <td>Allow anonymous suggestions?</td>
+										  <td><input type="checkbox" name="anonymous" id="anonymous" /></td>
+										</tr>
+  </table>
+										
+									</p>
+								  <h2 class="fs-title">Upload Logo</h2>
+									<div class="row">
+									<input type="file" name="fileField" id="fileField" class="custom-file-input" />
+									</div>
+								</div> 
+								<input type="button" name="previous" class="previous action-button-previous" value="Previous" /> 
+								<input type="button" name="make_payment" class="next action-button" value="Next Step" />
+                            </fieldset>
+                            <fieldset>
+                                <div class="form-card">
+										<div class="row">
+											<div class="col-xs-12 col-md-8">.<div id="logo" class="logo"></div></div>
+										<div class="col-xs-6 col-md-4"> <input type="text" name="boxname" /></div>
+										</div>
+                                    
+                                    <div class="row">
+											<div class="col-xs-12 col-md-12"><textarea row="8" name="boxdesp"> </textarea></div>
+										</div>
+                                  
+                                </div>
+								<input type="button" name="previous" class="previous action-button-previous" value="Previous" /> 
+								<input type="button" name="make_payment" class="next action-button" value="Submit" />
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	<script>$(document).ready(function(){
+
+var current_fs, next_fs, previous_fs; //fieldsets
+var opacity;
+
+$(".next").click(function(){
+
+current_fs = $(this).parent();
+next_fs = $(this).parent().next();
+
+//Add Class Active
+$("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+
+//show the next fieldset
+next_fs.show();
+//hide the current fieldset with style
+current_fs.animate({opacity: 0}, {
+step: function(now) {
+// for making fielset appear animation
+opacity = 1 - now;
+
+current_fs.css({
+'display': 'none',
+'position': 'relative'
+});
+next_fs.css({'opacity': opacity});
+},
+duration: 600
+});
+});
+
+$(".previous").click(function(){
+
+current_fs = $(this).parent();
+previous_fs = $(this).parent().prev();
+
+//Remove class active
+$("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
+
+//show the previous fieldset
+previous_fs.show();
+
+//hide the current fieldset with style
+current_fs.animate({opacity: 0}, {
+step: function(now) {
+// for making fielset appear animation
+opacity = 1 - now;
+
+current_fs.css({
+'display': 'none',
+'position': 'relative'
+});
+previous_fs.css({'opacity': opacity});
+},
+duration: 600
+});
+});
+
+$('.radio-group .radio').click(function(){
+$(this).parent().find('.radio').removeClass('selected');
+$(this).addClass('selected');
+});
+
+$(".submit").click(function(){
+return false;
+})
+
+});</script>
+</body>
+</html>
