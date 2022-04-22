@@ -1,4 +1,4 @@
-# Design-challange.This Includes Teh React.JS code for Suggestiombox.tips web Application.
+# Design-challange.This Includes React.JS code for Suggestiombox.tips web Application.
 The Code Containat as follows
 Login & Register page Control
 Create NEw Box and User Onboarding
